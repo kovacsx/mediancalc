@@ -32,6 +32,10 @@ void MainWindow::on_actionOpen_triggered()
         return;
     }
 
+
+    QFile file;
+    file.setFileName(fileName);
+
     auto values = loadValuesFromJson(fileName.toStdString());
 
     if(values.empty()) {
