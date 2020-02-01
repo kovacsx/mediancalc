@@ -48,7 +48,7 @@ void myunittests::test_case_median_positive()
     QFETCH(double, result);
 
     auto median1 = calculateMedianValue(values);
-    QVERIFY(median1 == result);
+    QVERIFY2(median1 == result, qPrintable(QString("calculated median: %1, expected: %2").arg(median1).arg(result)));
 }
 
 void myunittests::test_case_median_negative()
