@@ -1,1 +1,1 @@
-Small Qt app that was written as part on interview process, that reads values from JSON file, displays them and calculates median value.
+Small Qt app that was written as part on interview process, that reads values from JSON file, displays them and calculates median value and have simple unit test.
